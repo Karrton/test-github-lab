@@ -13,6 +13,8 @@ def get_team_members():
     if not github_repo:
         print("Ошибка: GITHUB_REPOSITORY не найден")
         sys.exit(1)
+    print(f"GITHUB_REPOSITORY: {github_repo}")
+    print(f"GITHUB_TOKEN: {github_token}")
     
     # GitHub API endpoint для получения contributors
     api_url = f"https://api.github.com/repos/{github_repo}/contributors"
