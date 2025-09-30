@@ -3,6 +3,8 @@ import os
 import requests
 import sys
 
+#Вывод участников репозитория
+
 def get_team_members():
     """Получить всех участников репозитория через GitHub API"""
     
