@@ -16,7 +16,7 @@ def get_team_members():
         print("Ошибка: GITHUB_REPOSITORY не найден")
         sys.exit(1)
     
-    # GitHub API endpoint для получения contributors
+    # GitHub API endpoint для получения contributors (те, кто делал коммиты)
     api_url = f"https://api.github.com/repos/{github_repo}/contributors"
     
     headers = {}
